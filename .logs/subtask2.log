@@ -1,0 +1,18 @@
+[2026-04-20T16:24:35.198Z] Plugin initialized: 0 commands []
+[2026-04-20T16:24:35.535Z] Registered /subtask command
+[2026-04-20T16:26:45.397Z] message-hooks: ENTRY msgCount=1, sessions=ses_25448c5ccffeprSgHzKzrR5KsL
+[2026-04-20T16:26:45.397Z] message-hooks: MESSAGES: [0]user: text:"what you can see "
+[2026-04-20T16:26:45.397Z] message-hooks: post-filter, msgCount=1
+[2026-04-20T16:26:45.397Z] message-hooks: about to search for OPENCODE_GENERIC
+[2026-04-20T16:26:45.397Z] message-hooks: searching 1 messages for OPENCODE_GENERIC
+[2026-04-20T16:26:45.397Z] message-hooks: generic search complete, found=false, index=-1
+[2026-04-20T16:26:45.397Z] message-hooks: no generic part found, checking for pending prompt return
+[2026-04-20T16:27:00.268Z] message-hooks: ENTRY msgCount=2, sessions=ses_25448c5ccffeprSgHzKzrR5KsL
+[2026-04-20T16:27:00.268Z] message-hooks: MESSAGES: [0]user: text:"what you can see " | [1]assistant: step-start, reasoning, tool:completed, step-finish
+[2026-04-20T16:27:00.269Z] message-hooks: post-filter, msgCount=2
+[2026-04-20T16:27:00.269Z] message-hooks: about to search for OPENCODE_GENERIC
+[2026-04-20T16:27:00.269Z] message-hooks: searching 2 messages for OPENCODE_GENERIC
+[2026-04-20T16:27:00.269Z] message-hooks: generic search complete, found=false, index=-1
+[2026-04-20T16:27:00.269Z] message-hooks: no generic part found, checking for pending prompt return
+[2026-04-20T16:27:15.394Z] session.idle: sessionID=ses_25448c5ccffeprSgHzKzrR5KsL
+[2026-04-20T16:27:15.405Z] session.idle: sessionID=ses_25448c5ccffeprSgHzKzrR5KsL

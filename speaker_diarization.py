@@ -39,7 +39,7 @@ def load_diarization_pipeline(model_name: str, hf_token: str):
         ) from exc
 
     try:
-        return Pipeline.from_pretrained(model_name, use_auth_token=hf_token)
+        return Pipeline.from_pretrained(model_name, token=hf_token)
     except Exception as exc:  # noqa: BLE001
         raise RuntimeError(
             f"Could not load model '{model_name}'. Check your Hugging Face token and internet access."
@@ -56,7 +56,7 @@ def extract_segments(diarization) -> list[dict[str, Any]]:
                 "speaker": str(speaker),
                 "start": round(start, 3),
                 "end": round(end, 3),
-                "duration": round(max(0.0, end - start), 3),
+                "duration": round(end - start, 3),
                 "start_hhmmss": format_timestamp(start),
                 "end_hhmmss": format_timestamp(end),
             }

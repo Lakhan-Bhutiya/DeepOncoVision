@@ -276,6 +276,35 @@ show_result(result)
 
 ---
 
+## Speaker Diarization Script (Pyannote)
+
+Use this standalone script to identify who spoke when in meeting audio files (`.mp3`, `.wav`, `.m4a`), generate a timeline image, and export structured JSON for downstream summarization workflows.
+
+### Setup
+
+```bash
+pip install pyannote.audio torch torchaudio matplotlib
+export HUGGINGFACE_TOKEN="hf_your_token"
+```
+
+### Run
+
+```bash
+python speaker_diarization.py /absolute/path/to/meeting.wav
+```
+
+Optional outputs:
+
+```bash
+python speaker_diarization.py /absolute/path/to/meeting.m4a \
+  --output-json /absolute/path/to/meeting_diarization.json \
+  --timeline-png /absolute/path/to/meeting_timeline.png
+```
+
+The script prints clear speaker segments to the console, saves timestamped segments to JSON, and writes a PNG speaker timeline for quick review.
+
+---
+
 ##  Results
 
 | Model | What it uses | Accuracy |
